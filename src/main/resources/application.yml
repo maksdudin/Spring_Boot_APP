@@ -1,0 +1,33 @@
+server:
+  port: 9090
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: [ "env", "health", "info", "refresh" ]
+
+spring:
+  liquibase:
+    change-log: classpath:/liquibase/db.changelog-master.yml
+    enabled: true
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/first_project
+    username: root
+    password: 'R@simgunay2018'
+  jpa:
+    open-in-view: true
+    show-sql: true
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+hibernate:
+  hbm2ddl:
+    auto: create
+
+api:
+  product: http://localhost:3030/products

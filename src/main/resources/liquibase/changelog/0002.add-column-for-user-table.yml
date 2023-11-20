@@ -1,0 +1,13 @@
+databaseChangeLog:
+  - changeSet:
+      id: tbl.user.002
+      author: Gunay Hashimova
+      changes:
+        - addColumn:
+            tableName: users
+            columns:
+              - column:
+                  name: middlename
+                  type: varchar(50)
+
+
