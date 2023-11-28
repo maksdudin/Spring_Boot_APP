@@ -12,7 +12,6 @@ import org.mapstruct.ReportingPolicy;
         unmappedSourcePolicy = ReportingPolicy.IGNORE)
 public interface UserMapper {
 
-    @Mapping(target = "name", ignore = true)
     UserDto toUserDto(UserEntity userEntity);
 
     UserEntity toUserEntity(UserDto userDto);

@@ -19,7 +19,6 @@ public class UserService {
 
     private final UserRepository userRepository;
     private final UserMapper userMapper;
-    private final ProductClient productClient;
 
     public UserDto getUserById(Long id){
         log.info("");

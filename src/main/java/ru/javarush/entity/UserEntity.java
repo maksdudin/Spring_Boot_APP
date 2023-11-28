@@ -25,8 +25,6 @@ public class UserEntity {
     @Column(name ="name")
     private String name;
 
-    private String productName;
-
     @CreationTimestamp()
     @Column(name = "created_date")
     private LocalDateTime createdAt;

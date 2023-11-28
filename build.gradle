@@ -36,6 +36,7 @@ dependencies {
     implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.27'
     implementation 'org.springframework.boot:spring-boot-starter-amqp'
     implementation 'org.springframework.boot:spring-boot-starter-web'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
     implementation files('my_lib/Products-0.0.1-SNAPSHOT-plain.jar')
 
@@ -44,6 +45,8 @@ dependencies {
     implementation 'org.apache.commons:commons-lang3'
 
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
+
+
 
     implementation 'org.mapstruct:mapstruct:1.5.3.Final'
     annotationProcessor 'org.projectlombok:lombok'
