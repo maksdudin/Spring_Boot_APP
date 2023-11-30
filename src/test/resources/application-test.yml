@@ -28,6 +28,3 @@ spring:
 hibernate:
   hbm2ddl:
     auto: create
-
-api:
-  product: http://localhost:3030/products

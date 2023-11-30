@@ -36,8 +36,11 @@ dependencies {
     implementation group: 'mysql', name: 'mysql-connector-java', version: '8.0.27'
     implementation 'org.springframework.boot:spring-boot-starter-amqp'
     implementation 'org.springframework.boot:spring-boot-starter-web'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
 
+    // Test dependencies
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'org.mockito:mockito-junit-jupiter'
     implementation files('my_lib/Products-0.0.1-SNAPSHOT-plain.jar')
 
     implementation 'org.liquibase:liquibase-core'
